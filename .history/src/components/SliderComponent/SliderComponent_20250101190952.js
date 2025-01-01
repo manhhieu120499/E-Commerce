@@ -8,20 +8,11 @@ function SliderComponent({ listItem }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
   };
   return (
     <Slider {...settings}>
       {listItem.map((item) => (
-        <Image
-          key={item}
-          src={item}
-          alt="slide"
-          preview={false}
-          width={"100%"}
-          height={300}
-        />
+        <Image src={item} alt="slide" width={"100%"} />
       ))}
     </Slider>
   );

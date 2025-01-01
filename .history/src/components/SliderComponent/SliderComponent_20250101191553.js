@@ -15,7 +15,6 @@ function SliderComponent({ listItem }) {
     <Slider {...settings}>
       {listItem.map((item) => (
         <Image
-          key={item}
           src={item}
           alt="slide"
           preview={false}
